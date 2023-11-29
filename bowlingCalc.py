@@ -116,6 +116,7 @@ def getPlayersScore():
         if roll3 == 10:
          print("Well done, you scored a strike!")
        
+       
         print("Your total score is:" , sum(score))
         break
 getPlayersScore() 
