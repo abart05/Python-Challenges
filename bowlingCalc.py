@@ -1,5 +1,5 @@
 score = []
- 
+
 def getPlayersScore():
     while True:
         #frame1
