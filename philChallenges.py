@@ -82,7 +82,7 @@ def is_integer_odd(integer):
     else: 
         print("False")
 
-is_integer_odd(2)
+#is_integer_odd(2)
 
 # Purpose: checks if the number given is even
 # Example:
@@ -97,7 +97,7 @@ def is_integer_even(integer):
     else: 
         print("False")
 
-is_integer_even(2)
+#is_integer_even(2)
 
 
 # Purpose: converts an integer to a float
@@ -105,8 +105,10 @@ is_integer_even(2)
 #   Call:    integer_to_float(1)
 #   Returns: 1.0
 def integer_to_float(integer):
-   # your code goes here (delete the pass below)
-   pass
+   x = integer
+   print(float(x))
+
+#integer_to_float(1)
 
 
 # Purpose: converts an integer to a string
@@ -114,8 +116,10 @@ def integer_to_float(integer):
 #   Call:    integer_to_string(1)
 #   Returns: "1"
 def integer_to_string(integer):
-   # your code goes here (delete the pass below)
-   pass
+   x = integer
+   print(str(x))
+
+#integer_to_string(1)
 
 
 # Purpose: returns the integer one lower than the one given
@@ -123,8 +127,10 @@ def integer_to_string(integer):
 #   Call:    return_one_lower(4)
 #   Returns: 3
 def return_one_lower(integer):
-   # your code goes here (delete the pass below)
-   pass
+   x = integer -1
+   print(x)
+
+#return_one_lower(4)
 
 
 # Purpose: returns the integer one higher than the one given
@@ -132,26 +138,32 @@ def return_one_lower(integer):
 #   Call:    return_one_higher(4)
 #   Returns: 5
 def return_one_higher(integer):
-   # your code goes here (delete the pass below)
-   pass
+   x = integer + 1
+   print(x)
+
+#return_one_higher(4)
 
 
 # Purpose: rounds a float up to the nearest integer
 # Example:
 #   Call:    round_up(4.5)
 #   Returns: 5
+import math
 def round_up(float):
-   # your code goes here (delete the pass below)
-   pass
+   x = float
+   print(math.ceil(x))
 
+#round_up(4.5)
 
 # Purpose: rounds a float down to the nearest integer
 # Example:
 #   Call:    round_down(4.5)
 #   Returns: 4
 def round_down(float):
-   # your code goes here (delete the pass below)
-   pass
+   x = float
+   print(math.floor(x))
+
+#round_down(4.5)
 
 
 # Purpose: converts a float to a string
@@ -159,8 +171,9 @@ def round_down(float):
 #   Call:    float_to_string(1.0)
 #   Returns: "1.0"
 def float_to_string(float):
-   # your code goes here (delete the pass below)
-   pass
+   print(str(float))
+
+#float_to_string(1.0)
 
 
 # Purpose: converts a float to an integer
@@ -168,8 +181,10 @@ def float_to_string(float):
 #   Call:    float_to_integer(1.0)
 #   Returns: 1
 def float_to_integer(float):
-   # your code goes here (delete the pass below)
-   pass
+   print(int(float))
+
+#float_to_integer(1.0)
+
 
 
 # Purpose: checks if a float is positive
@@ -179,8 +194,12 @@ def float_to_integer(float):
 #   Call:    float_is_positive(-1.0)
 #   Returns: False
 def float_is_positive(float):
-   # your code goes here (delete the pass below)
-   pass
+   if float >= 0:
+        print("True")
+   else:
+        print("False")
+
+#float_is_positive(-1.0)
 
 
 # Purpose: checks if a float is negative
@@ -190,8 +209,12 @@ def float_is_positive(float):
 #   Call:    float_is_negative(-1.0)
 #   Returns: True
 def float_is_negative(float):
-   # your code goes here (delete the pass below)
-   pass
+   if float <= 0:
+        print("True")
+   else:
+        print("False")
+
+#float_is_negative(-1.0)
 
 
 # Purpose: converts a boolean to a string
@@ -199,5 +222,7 @@ def float_is_negative(float):
 #   Call:    boolean_to_string(True)
 #   Returns: "True"
 def boolean_to_string(boolean):
-   # your code goes here (delete the pass below)
-   pass
+   print(bool(boolean))
+   
+
+#boolean_to_string("True")
