@@ -15,12 +15,12 @@
 #   Call:    starts_with_the_letter_a("Rock")
 #   Returns: False
 def starts_with_the_letter_a(string):
-    if string.startswith("a") or string.startswith("A"):
-        print("True")
+    if (string[0] == "A" or string[0] == "a"):
+        return "True"
     else:
-        print("False")
+        return "False"
 
-starts_with_the_letter_a("Rock")
+#print(starts_with_the_letter_a("rock"))
 
 
 # Purpose: checks if a string ends with the letter a
@@ -32,9 +32,12 @@ starts_with_the_letter_a("Rock")
 #   Call:    ends_with_the_letter_a("Python")
 #   Returns: False
 def ends_with_the_letter_a(string):
+    if (string[-1] == "A" or string[-1] == "a"):
+        return "True"
+    else:
+        return "False"
 
-    # your code goes here (delete the pass below)
-    pass
+#print(ends_with_the_letter_a("Python"))
 
 
 # Purpose: checks if a string contains the word hello
@@ -46,8 +49,13 @@ def ends_with_the_letter_a(string):
 #   Call:    contains_hello("world")
 #   Returns: False
 def contains_hello(string):
-    # your code goes here (delete the pass below)
-    pass
+    if string ("hello") or string.contains("HELLO"):
+        print("True")
+    else:
+        print("False")
+
+#contains_hello("hello world")
+
 
 
 # Purpose: replaces the word hello with the word goodbye

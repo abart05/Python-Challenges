@@ -1,8 +1,9 @@
 git commands
 
-git init 
-git status - to see what's been amended and if anything needs pushing 
-git add #add whatever file name include .py for example#
-git status to double check it's ready to be committed (should be green)
-git commit -m "First Commit" #always include comment in quotations
-git push origin master
+> git init // 
+> git status // to see what's been amended and if anything needs pushing 
+> git add // add whatever file name include .py for example# 
+    git add . // adds all files... double check?
+> git status // to double check it's ready to be committed (should be green)
+> git commit -m "First Commit" // always include comment in quotations
+> git push origin main //
