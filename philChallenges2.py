@@ -49,7 +49,7 @@ def ends_with_the_letter_a(string):
 #   Call:    contains_hello("world")
 #   Returns: False
 def contains_hello(string):
-    if string ("hello") or string.contains("HELLO"):
+    if string ["hello"] or string.contains("HELLO"):
         print("True")
     else:
         print("False")

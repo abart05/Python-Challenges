@@ -32,7 +32,7 @@ def length_of_a_string(string):
    print(len(x))
 
 #function call
-#length_of_a_string("hello")
+#length_of_a_string("Hello")
 
 
 # Purpose: return the string reversed
@@ -40,11 +40,10 @@ def length_of_a_string(string):
 #   Call:    reverse_a_string("hello")
 #   Returns: "olleh"
 def reverse_a_string(string):
-   string = string[::-1]
-   print(string)
+   return string [::-1]
 
 #function call
-#reverse_a_string("hello")
+#print(reverse_a_string("hello"))
 
 #Example using loop
 def reverse_string(string):
@@ -62,11 +61,10 @@ def reverse_string(string):
 #   Call:    swap_the_case_of_a_string("Hello World")
 #   Returns: "hELLO wORLD"
 def swap_the_case_of_a_string(string):
-   string = string.swapcase()
-   print(string)
+   return string.swapcase()
 
 #function call
-#swap_the_case_of_a_string("Hello World")
+#print(swap_the_case_of_a_string("Hello World"))
 
 
 # Purpose: checks if the number given is odd
@@ -76,13 +74,12 @@ def swap_the_case_of_a_string(string):
 #   Call:    is_integer_odd(2)
 #   Returns: False
 def is_integer_odd(integer):
-    x = integer
-    if x % 2 != 0:
-        print("True")
+    if integer % 2 != 0:
+        return "True"
     else: 
-        print("False")
+        return "False"
 
-#is_integer_odd(2)
+#print(is_integer_odd(2))
 
 # Purpose: checks if the number given is even
 # Example:
@@ -91,13 +88,12 @@ def is_integer_odd(integer):
 #   Call:    is_integer_even(2)
 #   Returns: True
 def is_integer_even(integer):
-    x = integer
-    if x % 2 == 0:
+    if integer % 2 == 0:
         print("True")
     else: 
         print("False")
 
-#is_integer_even(2)
+#is_integer_even(1)
 
 
 # Purpose: converts an integer to a float
@@ -105,10 +101,9 @@ def is_integer_even(integer):
 #   Call:    integer_to_float(1)
 #   Returns: 1.0
 def integer_to_float(integer):
-   x = integer
-   print(float(x))
+   return float(integer)
 
-#integer_to_float(1)
+#print(integer_to_float(1))
 
 
 # Purpose: converts an integer to a string
@@ -116,10 +111,9 @@ def integer_to_float(integer):
 #   Call:    integer_to_string(1)
 #   Returns: "1"
 def integer_to_string(integer):
-   x = integer
-   print(str(x))
+   return str(integer)
 
-#integer_to_string(1)
+#print(integer_to_string(1))
 
 
 # Purpose: returns the integer one lower than the one given
@@ -127,10 +121,9 @@ def integer_to_string(integer):
 #   Call:    return_one_lower(4)
 #   Returns: 3
 def return_one_lower(integer):
-   x = integer -1
-   print(x)
+   return integer -1
 
-#return_one_lower(4)
+#print(return_one_lower(4))
 
 
 # Purpose: returns the integer one higher than the one given
@@ -138,10 +131,9 @@ def return_one_lower(integer):
 #   Call:    return_one_higher(4)
 #   Returns: 5
 def return_one_higher(integer):
-   x = integer + 1
-   print(x)
+   return integer + 1
 
-#return_one_higher(4)
+#print(return_one_higher(4))
 
 
 # Purpose: rounds a float up to the nearest integer
@@ -150,20 +142,18 @@ def return_one_higher(integer):
 #   Returns: 5
 import math
 def round_up(float):
-   x = float
-   print(math.ceil(x))
+   return math.ceil(float)
 
-#round_up(4.5)
+#print(round_up(4.5))
 
 # Purpose: rounds a float down to the nearest integer
 # Example:
 #   Call:    round_down(4.5)
 #   Returns: 4
 def round_down(float):
-   x = float
-   print(math.floor(x))
+   return math.floor(float)
 
-#round_down(4.5)
+##print(round_down(4.5))
 
 
 # Purpose: converts a float to a string
@@ -171,9 +161,9 @@ def round_down(float):
 #   Call:    float_to_string(1.0)
 #   Returns: "1.0"
 def float_to_string(float):
-   print(str(float))
+   return str(float)
 
-#float_to_string(1.0)
+#print(float_to_string(1.0))
 
 
 # Purpose: converts a float to an integer
@@ -181,9 +171,9 @@ def float_to_string(float):
 #   Call:    float_to_integer(1.0)
 #   Returns: 1
 def float_to_integer(float):
-   print(int(float))
+   return int(float)
 
-#float_to_integer(1.0)
+#print(float_to_integer(2.6))
 
 
 
@@ -222,7 +212,6 @@ def float_is_negative(float):
 #   Call:    boolean_to_string(True)
 #   Returns: "True"
 def boolean_to_string(boolean):
-   print(bool(boolean))
-   
+   return str(boolean)
 
-#boolean_to_string("True")
+#print(boolean_to_string(True))
