@@ -15,7 +15,7 @@
 #   Call:    starts_with_the_letter_a("Rock")
 #   Returns: False
 def starts_with_the_letter_a(string):
-    if (string[0] == "A" or string[0] == "a"):
+    if string[0] == "A" or string[0] == "a":
         return "True"
     else:
         return "False"
@@ -32,12 +32,12 @@ def starts_with_the_letter_a(string):
 #   Call:    ends_with_the_letter_a("Python")
 #   Returns: False
 def ends_with_the_letter_a(string):
-    if (string[-1] == "A" or string[-1] == "a"):
+    if string[-1] == "A" or string[-1] == "a":
         return "True"
     else:
         return "False"
 
-#print(ends_with_the_letter_a("Python"))
+#print(ends_with_the_letter_a("python"))
 
 
 # Purpose: checks if a string contains the word hello
