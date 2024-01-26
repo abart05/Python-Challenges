@@ -29,4 +29,106 @@ def fizz_buzz(number):
     else:
         return number
 
-print(fizz_buzz(8))    
+# print(fizz_buzz(8))
+
+
+
+# Purpose: responds to the user's greeting
+# Rules:   if the greeting is 'good morning'
+#          return 'good morning to you too'
+#          if the greeting is 'hello'
+#          return 'hi'
+#          if the greeting is anything else
+#          return the greeting that was received
+# Example:
+#   Call:    reply_to("good morning")
+#   Returns: "good morning to you too"
+#   Call:    reply_to("hello")
+#   Returns: "hi"
+#   Call:    reply_to("how are you?")
+#   Returns: "how are you?"
+    
+def reply_to(string):
+    if string.lower() == "good morning":
+        return "good morning to you too"
+    elif string.lower() == "hello":
+        return "hi"
+    elif string.lower() == "how are you":
+        return "how are you?"
+    else:
+        return "greeting was received"
+
+# print(reply_to("hello"))
+
+# Purpose: deducts 10 from a number if it is greater than or equal to 10,
+#          otherwise returns the number
+# Example:
+#   Call:    deduct_10_if_possible(25)
+#   Returns: 15
+#   Call:    deduct_10_if_possible(10)
+#   Returns: 0
+#   Call:    deduct_10_if_possible(9)
+#   Returns: 9
+    
+def deduct_10(number):
+    if number >= 10:
+        return number - 10
+    else:
+        return number
+
+# print(deduct_10(9))
+    
+# Purpose: if the number is below 100, return 100, otherwise return the number
+# Example:
+#   Call:    top_up_to_100(25)
+#   Returns: 100
+#   Call:    top_up_to_100(100)
+#   Returns: 100
+#   Call:    top_up_to_100(125)
+#   Returns: 125
+
+def top_up_to_100(number):
+    if number < 100:
+        return 100
+    else:
+        return number
+    
+#print(top_up_to_100(125))
+
+
+# Method name: fourth_element
+# Purpose: returns the fourth element of the given list
+# Arguments: one list
+# Example:
+#   Call:    fourth_element([1, 2, 3, 4, 5])
+#   Returns: 4
+
+# def fourth_element(one_list):
+#      if len(one_list) >= 4:
+#          return one_list[3]
+#      else:
+#          return "List not long enough"
+    
+# one_list = [1, 2, 3, 4, 5]
+# result = fourth_element(one_list)
+    
+#print (result)
+
+def average(onelist):
+    return sum(onelist) / len(onelist)
+
+#print(average([3, 1, 44, 1]))
+
+# Method name: lowest_squared
+# Purpose: returns the lowest number squared
+# Arguments: one list
+# Example:
+#   Call:    lowest_squared([5, 3, 44, 7])
+#   Returns: 9
+
+def lowest_squared(number):
+    number = min(number)
+    return number * number
+
+
+print(lowest_squared([5, 3, 44, 7]))
