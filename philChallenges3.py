@@ -131,4 +131,4 @@ def lowest_squared(number):
     return number * number
 
 
-print(lowest_squared([5, 3, 44, 7]))
+#print(lowest_squared([5, 3, 44, 7]))

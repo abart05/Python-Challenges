@@ -225,4 +225,6 @@ class Cohort():
             return (self.end_date - self.start_date).days
  
 cohort = Cohort('June2020', '2020-06-01', '2020-09-01')
-print(cohort.calculate_duration())
+#print(cohort.calculate_duration())
+
+
