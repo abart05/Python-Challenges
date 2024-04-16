@@ -202,7 +202,23 @@ calculator = Calculator()
 #   > cohort.list_employed_by('NASA')
 #   [{'name' : 'Jo', 'employer' : 'NASA'}, {'name' : 'Alex', 'employer' : 'NASA'}]
 
+class Cohort():
+    def __init__(self):
+        self.students = []
+    def add_student(self, student):  
+        self.students.append(student)
+    def list_students(self):
+        return self.students
+    def list_employed_by(self, employer):
+        return [student for student in self.students if student.get('employer') == employer]
 
+
+cohort = Cohort()
+cohort.add_student({'name' : 'Jo', 'employer': 'NASA'})
+cohort.add_student({'name' : 'Alex', 'employer' : 'NASA'})
+cohort.add_student({'name' : 'Bobby', 'employer' : 'Google'})
+print(cohort.list_students())
+print(cohort.list_employed_by('NASA'))
 
 # Class name: Person
 # Purpose: store a person's name, pets and addresses
@@ -237,3 +253,23 @@ calculator = Calculator()
 #   '10 South Street'
 #   > person.get_pets()
 #   'Alex has 3 pets: a cat called Arthur, a dog called Judith, a goldfish called Gwen'
+
+class Person():
+    def __init__(self, data):
+        self.person = data
+    def get_work_address(self):
+        return 
+person = Person({
+      'name' : 'Alex',
+      'pets' : [
+        {'name' : 'Arthur', 'animal' : 'cat'},
+        {'name' : 'Judith', 'animal' : 'dog'},
+        {'name' : 'Gwen', 'animal' : 'goldfish'}
+      ],
+      'addresses' : [
+        {'name' : 'work', 'building' : '50', 'street' : 'Commercial Street'},
+        {'name' : 'home', 'building' : '10', 'street' : 'South Street'}
+      ]
+    })
+
+print(person.get_work_address())

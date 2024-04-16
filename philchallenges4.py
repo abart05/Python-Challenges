@@ -329,6 +329,31 @@
 # If you find it interesting to play with the other versions a bit as well, go for
 # it. If not, don't worry :)
 
+passwords = [
+{'service': 'takeaway', 'password': 'asdf', 'added_on': '21/03/22'},
+{'service': 'acebook', 'password': 'password123', 'added_on': '22/03/22'},
+{'service': 'makersbnb', 'password': 'qwerty789', 'added_on': '22/03/22'}
+]
+
+def password_added_on(passwords):
+    for x in passwords:
+        if x['added_on'] == '21/03/22':
+            return x
+        else:
+            return 'False'
+    
+def list_all_passwords(passwords):
+    matching_passwords = []
+    for x in passwords:
+        if x['added_on'] == '22/03/22':
+            matching_passwords.append(x)
+    return matching_passwords
+
+print(list_all_passwords(passwords))        
+print(password_added_on(passwords)) 
+
+
+
 # ### One more useful list operation
 
 # So far we've mainly seen different ways of searching for elements in a list
